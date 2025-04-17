@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – DeLeon Photography</title>
+  <style>
+    :root {
+      --dark-green: #1d3a2f;
+      --cream: #fdf6ee;
+      --brown: #8b5e3c;
+      --black: #000000;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--cream);
+      color: var(--black);
+    }
+
+    header {
+      background-color: var(--dark-green);
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--cream);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .portfolio-section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2.5rem;
+      color: var(--dark-green);
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 1rem;
+      background-color: var(--dark-green);
+      color: var(--cream);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DeLeon Photography</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="#">About Me</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="portfolio-section">
+    <h2>Portfolio</h2>
+<div class="gallery">
+  <img src="images/DSC06987-2.jpg" alt="Player with bat">
+  <img src="images/DSC07573-Enhanced-NR.jpg" alt="At bat">
+  <img src="images/DSC07699-Enhanced-NR.jpg" alt="Pitcher winding up">
+  <img src="images/DSC07511-Enhanced-NR.jpg" alt="Catcher walking off">
+  <img src="images/DSC07819-Enhanced-NR.jpg" alt="Pitcher in moment">
+</div>
+  </section>
+
+  <footer>
+    &copy; 2025 DeLeon Photography. All rights reserved.
+  </footer>
+
+</body>
+</html>

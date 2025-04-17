@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeLeon Photography</title>
+  <style>
+    :root {
+      --dark-green: #1d3a2f;
+      --cream: #fdf6ee;
+      --brown: #8b5e3c;
+      --black: #000000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: var(--cream);
+      color: var(--black);
+    }
+
+    header {
+      background-color: var(--dark-green);
+      color: var(--cream);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--cream);
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: var(--brown);
+      color: var(--cream);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-section {
+      padding: 3rem 1rem;
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .form-section h3 {
+      text-align: center;
+      color: var(--dark-green);
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: var(--dark-green);
+    }
+
+    input, textarea, select {
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: var(--dark-green);
+      color: var(--cream);
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--brown);
+    }
+
+    footer {
+      background-color: var(--dark-green);
+      color: var(--cream);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+
+	
+  <header>
+    <h1>DeLeon Photography</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="#">About Me</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Capturing Sports, Moments & Real Life</h2>
+    <p>Based in San Antonio, TX — I specialize in movement, emotion, and the unforgettable energy of every performance and game.</p>
+  </section>
+
+  <section class="form-section">
+    <h3>Book a Session / Inquiry</h3>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="event">Type of Event</label>
+      <select id="event" name="event" required>
+        <option value="">-- Select --</option>
+        <option value="sports">Sports</option>
+        <option value="performance">Performance</option>
+        <option value="business">Business/Headshots</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message or Inquiry</label>
+      <textarea id="message" name="message" placeholder="Tell me about the event or what you need photos for..." required></textarea>
+
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 DeLeon Photography — All rights reserved.
+  </footer>
+
+</body>
+</html>

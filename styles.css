@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.portfolio {
+  padding: 4rem 1rem;
+  background-color: var(--cream);
+  text-align: center;
+}
+
+.portfolio h3 {
+  color: var(--dark-green);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
